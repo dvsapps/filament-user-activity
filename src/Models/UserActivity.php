@@ -5,7 +5,7 @@ namespace Edwink\FilamentUserActivity\Models;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Edwink\FilamentUserActivity\Models\Scope\UserActivityScope;
+use Edwink\FilamentUserActivity\Models\Scopes\UserActivityScope;
 
 class UserActivity extends Model
 {

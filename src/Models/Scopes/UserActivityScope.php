@@ -1,6 +1,6 @@
 <?php
 
-namespace Edwink\FilamentUserActivity\Models\Scope;
+namespace Edwink\FilamentUserActivity\Models\Scopes;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
