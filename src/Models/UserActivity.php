@@ -5,6 +5,7 @@ namespace Edwink\FilamentUserActivity\Models;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Edwink\FilamentUserActivity\Models\Scope\UserActivityScope;
 
 class UserActivity extends Model
 {
@@ -27,5 +28,10 @@ class UserActivity extends Model
     public function user(): BelongsTo
     {
         return $this->belongsTo(config('filament-user-activity.model'));
+    }
+
+    protected static function booted(): void
+    {
+        static::addGlobalScope(new UserActivityScope);
     }
 }
